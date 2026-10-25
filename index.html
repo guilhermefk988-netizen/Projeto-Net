@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX DO GUI</title>
+    <link rel="stylesheet" href="netflix.css">
+    <script src="netflix.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="navegadores">
+            <div class="logo">
+                LOGO
+            </div>
+            <div class="nav">
+                <a id="hero" href="#">Início</a>
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#" id="button__Filtro">Filtra</a>
+            </div>
+        </div>
+        <div class="pesquisas__butoes">
+            <div class="pesquisa">
+                <button><img width="30" height="30" src="https://img.icons8.com/ios/50/ffffff/search--v1.png"
+                        alt="search--v1" /></button>
+                <input placeholder="Buscar Filmes, series..." type="text">
+            </div>
+            <div>
+                <img width="30" height="30" src="https://img.icons8.com/material-outlined/24/ffffff/alarm.png"
+                    alt="alarm" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png"
+                    alt="user--v1" />
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="imagem__grande">
+            <img src="img__provisoria.png" alt="">
+        </div>
+    </main>
+
+    <section class="section1">
+        <div class="card">
+            <img src="" alt="">
+        </div>
+    </section>
+
+    <section class="Mostra__Filme">
+        <div class="fundo__gradiente"></div>
+        <div class="Filme__escolhido">
+            <div class="imagem">
+                <img src="img__provisoria.png" alt="">
+            </div>
+            <div class="textos">
+
+                <h2>titulo</h2>
+
+                <div class="texto__extra">
+                    <p>data</p>
+                    <p>clasificação 16</p>
+                    <p>temporada</p>
+                    <p>genero</p>
+                </div>
+
+                <p>texto</p>
+
+                <button>assistir</button>
+                <button>+ Minha Lista</button>
+            </div>
+
+            <div class="sair__da__informação">
+                <button class="sair__filme"> <img width="50" height="50"
+                        src="https://img.icons8.com/ios/50/circled-left-2.png" alt="circled-left-2" /></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="Filtro">
+        <div class="prenchimento__de__espaço">
+
+        </div>
+
+        <div class="filtro__menu">
+            <button class="ativo">todos</button>
+            <button>Ação</button>
+            <button>Aventura</button>
+            <button>Comédia</button>
+            <button>Drama</button>
+            <button>Terror</button>
+            <button>Ficção Cientifica</button>
+            <button>Romance</button>
+            <button>Suspense</button>
+            <button>Animação</button>
+
+        </div>
+
+        <div class="Filmes__do__filtro">
+
+        </div>
+    </section>
+</body>
+
+</html>
