@@ -3,8 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --branco: #fff;
+  --vermelho: #ff0000;
+}
+
 body {
-  color: white;
+  color: var(--branco);
   font-family: "Inter", sans-serif;
 }
 button:active {
@@ -32,7 +37,7 @@ button:active {
     gap: 3vw;
 
     a {
-      color: white;
+      color: var(--branco);
       text-decoration: none;
       position: relative;
       display: flex;
@@ -44,7 +49,7 @@ button:active {
       transition: 0.3s;
     }
     a:hover {
-      color: red;
+      color: var(--vermelho);
     }
     a::after {
       content: "";
@@ -52,7 +57,7 @@ button:active {
       transition: 0.3s;
       width: 0%;
       height: 0.1rem;
-      background: red;
+      background: var(--vermelho);
       bottom: 0;
     }
   }
@@ -62,7 +67,7 @@ button:active {
     gap: 1vw;
     button {
       background: none;
-      color: white;
+      color: var(--branco);
       border: none;
       cursor: pointer;
       border-radius: 50%;
@@ -78,7 +83,7 @@ button:active {
       background: none;
       border: none;
       outline: none;
-      color: white;
+      color: var(--branco);
     }
     border: solid rgba(241, 233, 233, 0.459) 1px;
     border-radius: 3vw;
@@ -89,6 +94,11 @@ button:active {
     align-items: center;
     gap: 1vw;
   }
+  .logo{
+    img{
+      width: 4vw;
+    }
+  }
 }
 
 .main {
@@ -98,7 +108,6 @@ button:active {
   .imagem__grande {
     width: 100%;
     height: 100%;
-    background: green;
 
     img {
       width: 100%;
@@ -201,7 +210,7 @@ button:active {
       button {
         font-size: clamp(1rem, 2vw, 3rem);
         background: none;
-        color: white;
+        color: var(--branco);
         cursor: pointer;
         font-family: "Inter", sans-serif;
         padding: clamp(0.3rem, 0.5vw, 1rem) 1vw;
@@ -212,6 +221,7 @@ button:active {
         justify-content: center;
         gap: 0.2rem;
         font-weight: 300;
+        
       }
       button:nth-child(1) {
         background: rgb(214, 19, 19);
@@ -220,6 +230,9 @@ button:active {
     }
   }
   .sair__da__informação {
+    position: relative;
+    width: 50%;
+    
     .sair__filme {
       position: absolute;
       bottom: 4vw;
@@ -227,6 +240,9 @@ button:active {
       background: none;
       border: none;
       cursor: pointer;
+      z-index: 3;
+
+
     }
   }
 }
@@ -265,15 +281,13 @@ button:active {
     align-items: center;
     cursor: pointer;
     gap: 1rem;
+    padding: 0 2rem;
 
     button {
-      color: white;
+      color: var(--branco);
       background: none;
       border: none;
-      background: linear-gradient(
-        rgba(0, 0, 255, 0.158),
-        rgba(0, 0, 255, 0.651)
-      );
+      background: rgb(255, 126, 126);
       font-size: 1.3vw;
       padding: 0.5vw 1vw;
       cursor: pointer;
@@ -293,10 +307,10 @@ button:active {
       bottom: 0;
       height: 0.1rem;
       width: 0%;
-      background: blue;
+      background: rgb(141, 7, 7);
     }
     .ativo {
-      background: red;
+      background: var(--vermelho);
     }
   }
   .Filmes__do__filtro {
